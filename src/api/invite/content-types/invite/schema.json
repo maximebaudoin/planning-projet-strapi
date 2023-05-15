@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "invites",
+  "info": {
+    "singularName": "invite",
+    "pluralName": "invites",
+    "displayName": "Invites"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "reservation": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::reservation.reservation"
+    },
+    "utilisateur": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
+    }
+  }
+}
